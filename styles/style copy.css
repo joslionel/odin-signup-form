@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Suissnord';
+    src: url('../assets/fonts/Suissnord.otf');
+}
+
+.main {
+    --left: min(200px, 40vw);
+    --right-side: min(60vw, 1200px);
+    
+    display: flex;
+    flex: 1;
+    height: 100vh;
+    background-image: url('../assets/bg-img.jpg');
+    background-position: 50% 40%;
+    background-color: yellow;
+    background-size: cover;
+    justify-content: flex-end;
+}
+
+.right {
+    width: var(--right-side);
+    background: linear-gradient(180deg, cornflowerblue, darkslategray);
+    border-left: 1px solid black;
+}
+
+.left{
+    opacity: 80%;
+    align-self: center;
+    justify-content: flex-start;
+    width: var(--left);
+}
+
+.logo {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: min(5vw, 10rem);
+    margin: auto;
+}
+
+.logotext {
+    font-family: Suissnord;
+    font-size: min(5rem, 10vh);
+}
